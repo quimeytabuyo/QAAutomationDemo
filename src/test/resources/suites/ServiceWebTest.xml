@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ServiceWebTestSuite" parallel="tests" thread-count="2">
+	<test name="verificarDepartamentosMercadoLibre_05">
+		<classes>
+			<class name="tests.ServiceWebTest">
+				<methods>
+					<include name="verificarDepartamentosMercadoLibre_05" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

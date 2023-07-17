@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[====================================================]]>
+    </line>
+    <line>
+      <![CDATA[TEST METHOD: loginValido_01]]>
+    </line>
+    <line>
+      <![CDATA[Parameters:]]>
+    </line>
+    <line>
+      <![CDATA[password : secret_sauce]]>
+    </line>
+    <line>
+      <![CDATA[username : standard_user]]>
+    </line>
+    <line>
+      <![CDATA[====================================================]]>
+    </line>
+    <line>
+      <![CDATA[Ingresar usuario: standard_user]]>
+    </line>
+    <line>
+      <![CDATA[Ingresando contraseña]]>
+    </line>
+    <line>
+      <![CDATA[---------------]]>
+    </line>
+    <line>
+      <![CDATA[Finaliza loginValido_01]]>
+    </line>
+    <line>
+      <![CDATA[---------------]]>
+    </line>
+    <line>
+      <![CDATA[====================================================]]>
+    </line>
+    <line>
+      <![CDATA[TEST METHOD: loginFallido_02]]>
+    </line>
+    <line>
+      <![CDATA[Parameters:]]>
+    </line>
+    <line>
+      <![CDATA[password : secret_salsa]]>
+    </line>
+    <line>
+      <![CDATA[username : standard_user]]>
+    </line>
+    <line>
+      <![CDATA[====================================================]]>
+    </line>
+    <line>
+      <![CDATA[Ingresar usuario: standard_user]]>
+    </line>
+    <line>
+      <![CDATA[Ingresando contraseña]]>
+    </line>
+    <line>
+      <![CDATA[---------------]]>
+    </line>
+    <line>
+      <![CDATA[Finaliza loginFallido_02]]>
+    </line>
+    <line>
+      <![CDATA[
+
+Result: FAIL]]>
+    </line>
+    <line>
+      <![CDATA[---------------]]>
+    </line>
+    <line>
+      <![CDATA[Ingresar usuario: standard_user]]>
+    </line>
+    <line>
+      <![CDATA[Ingresar password]]>
+    </line>
+    <line>
+      <![CDATA[Agregar 3 a carrito]]>
+    </line>
+    <line>
+      <![CDATA[Ingresar usuario: standard_user]]>
+    </line>
+    <line>
+      <![CDATA[Ingresar password]]>
+    </line>
+    <line>
+      <![CDATA[Comparando valor inicial con el valor final]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2023-07-17T15:00:07 ART" name="SmokeTestSuite" finished-at="2023-07-17T15:00:13 ART" duration-ms="5798">
+    <groups>
+    </groups>
+    <test started-at="2023-07-17T15:00:07 ART" name="loginValido_01" finished-at="2023-07-17T15:00:10 ART" duration-ms="2437">
+      <class name="tests.LoginTest">
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@2bf94401]" started-at="2023-07-17T15:00:07 ART" name="beforeMethod" finished-at="2023-07-17T15:00:07 ART" duration-ms="59" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=LoginTest.loginValido_01(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@2bf94401] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[====================================================]]>
+            </line>
+            <line>
+              <![CDATA[TEST METHOD: loginValido_01]]>
+            </line>
+            <line>
+              <![CDATA[Parameters:]]>
+            </line>
+            <line>
+              <![CDATA[password : secret_sauce]]>
+            </line>
+            <line>
+              <![CDATA[username : standard_user]]>
+            </line>
+            <line>
+              <![CDATA[====================================================]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="loginValido_01(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@2bf94401]" started-at="2023-07-17T15:00:07 ART" name="loginValido_01" finished-at="2023-07-17T15:00:08 ART" duration-ms="370" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Ingresar usuario: standard_user]]>
+            </line>
+            <line>
+              <![CDATA[Ingresando contraseña]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginValido_01 -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@2bf94401]" started-at="2023-07-17T15:00:08 ART" name="tearDown" finished-at="2023-07-17T15:00:10 ART" duration-ms="1933" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginValido_01 status=SUCCESS method=LoginTest.loginValido_01(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@2bf94401] output=Ingresar usuario: standard_user]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[---------------]]>
+            </line>
+            <line>
+              <![CDATA[Finaliza loginValido_01]]>
+            </line>
+            <line>
+              <![CDATA[---------------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.LoginTest -->
+    </test> <!-- loginValido_01 -->
+    <test started-at="2023-07-17T15:00:10 ART" name="loginFallido_02" finished-at="2023-07-17T15:00:11 ART" duration-ms="1641">
+      <class name="tests.LoginTest">
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@5c82cd4f]" started-at="2023-07-17T15:00:10 ART" name="beforeMethod" finished-at="2023-07-17T15:00:10 ART" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=LoginTest.loginFallido_02(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@5c82cd4f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[====================================================]]>
+            </line>
+            <line>
+              <![CDATA[TEST METHOD: loginFallido_02]]>
+            </line>
+            <line>
+              <![CDATA[Parameters:]]>
+            </line>
+            <line>
+              <![CDATA[password : secret_salsa]]>
+            </line>
+            <line>
+              <![CDATA[username : standard_user]]>
+            </line>
+            <line>
+              <![CDATA[====================================================]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="loginFallido_02(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@5c82cd4f]" started-at="2023-07-17T15:00:10 ART" name="loginFallido_02" finished-at="2023-07-17T15:00:10 ART" duration-ms="252" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_salsa]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at tests.LoginTest.loginFallido_02(LoginTest.java:47)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Ingresar usuario: standard_user]]>
+            </line>
+            <line>
+              <![CDATA[Ingresando contraseña]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginFallido_02 -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@5c82cd4f]" started-at="2023-07-17T15:00:10 ART" name="tearDown" finished-at="2023-07-17T15:00:11 ART" duration-ms="1381" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginFallido_02 status=FAILURE method=LoginTest.loginFallido_02(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@5c82cd4f] output=Ingresar usuario: standard_user]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[---------------]]>
+            </line>
+            <line>
+              <![CDATA[Finaliza loginFallido_02]]>
+            </line>
+            <line>
+              <![CDATA[
+
+Result: FAIL]]>
+            </line>
+            <line>
+              <![CDATA[---------------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.LoginTest -->
+    </test> <!-- loginFallido_02 -->
+    <test started-at="2023-07-17T15:00:11 ART" name="agregarACarrito_03" finished-at="2023-07-17T15:00:12 ART" duration-ms="559">
+      <class name="tests.CompraTest">
+        <test-method signature="agregarACarrito_03(java.lang.String,java.lang.String,int,int)[pri:0, instance:tests.CompraTest@7a55f148]" started-at="2023-07-17T15:00:11 ART" name="agregarACarrito_03" finished-at="2023-07-17T15:00:12 ART" duration-ms="416" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Ingresar usuario: standard_user]]>
+            </line>
+            <line>
+              <![CDATA[Ingresar password]]>
+            </line>
+            <line>
+              <![CDATA[Agregar 3 a carrito]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- agregarACarrito_03 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CompraTest@7a55f148]" started-at="2023-07-17T15:00:12 ART" name="tearDown" finished-at="2023-07-17T15:00:12 ART" duration-ms="141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.CompraTest -->
+    </test> <!-- agregarACarrito_03 -->
+    <test started-at="2023-07-17T15:00:12 ART" name="sumarTotalDeCompra_04" finished-at="2023-07-17T15:00:13 ART" duration-ms="691">
+      <class name="tests.CompraTest">
+        <test-method signature="sumarTotalDeCompra_04(java.lang.String,java.lang.String,int)[pri:0, instance:tests.CompraTest@e48bf9a]" started-at="2023-07-17T15:00:12 ART" name="sumarTotalDeCompra_04" finished-at="2023-07-17T15:00:12 ART" duration-ms="513" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Ingresar usuario: standard_user]]>
+            </line>
+            <line>
+              <![CDATA[Ingresar password]]>
+            </line>
+            <line>
+              <![CDATA[Comparando valor inicial con el valor final]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- sumarTotalDeCompra_04 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CompraTest@e48bf9a]" started-at="2023-07-17T15:00:12 ART" name="tearDown" finished-at="2023-07-17T15:00:13 ART" duration-ms="175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.CompraTest -->
+    </test> <!-- sumarTotalDeCompra_04 -->
+    <test started-at="2023-07-17T15:00:13 ART" name="verificarDepartamentosMercadoLibre_05" finished-at="2023-07-17T15:00:13 ART" duration-ms="417">
+      <class name="tests.ServiceWebTest">
+        <test-method signature="verificarDepartamentosMercadoLibre_05()[pri:0, instance:tests.ServiceWebTest@6107165]" started-at="2023-07-17T15:00:13 ART" name="verificarDepartamentosMercadoLibre_05" finished-at="2023-07-17T15:00:13 ART" duration-ms="414" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verificarDepartamentosMercadoLibre_05 -->
+      </class> <!-- tests.ServiceWebTest -->
+    </test> <!-- verificarDepartamentosMercadoLibre_05 -->
+  </suite> <!-- SmokeTestSuite -->
+</testng-results>

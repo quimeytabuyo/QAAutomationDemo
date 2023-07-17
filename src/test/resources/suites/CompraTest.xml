@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="LoginTestSuite" parallel="tests" thread-count="1">
+	<test name="agregarACarrito_03">
+		<parameter name="username" value="standard_user" />
+		<parameter name="password" value="secret_sauce" />
+		<parameter name="cantidadProductosAAgregar" value="3" />
+		<parameter name="cantidadEsperada" value="3" />
+		<classes>
+			<class name="tests.CompraTest">
+				<methods>
+					<include name="agregarACarrito_03" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="sumarTotalDeCompra_04">
+		<parameter name="username" value="standard_user" />
+		<parameter name="password" value="secret_sauce" />
+		<parameter name="cantidadProductos" value="3" />
+		<classes>
+			<class name="tests.CompraTest">
+				<methods>
+					<include name="sumarTotalDeCompra_04" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
