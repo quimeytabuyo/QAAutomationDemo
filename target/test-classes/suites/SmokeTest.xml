@@ -1,0 +1,59 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SmokeTestSuite" parallel="tests" thread-count="1">
+	<test name="loginValido_01">
+		<parameter name="username" value="standard_user" />
+		<parameter name="password" value="secret_sauce" />
+		<classes>
+			<class name="tests.LoginTest">
+				<methods>
+					<include name="loginValido_01" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="loginFallido_02">
+		<parameter name="username" value="standard_user" />
+		<parameter name="password" value="secret_salsa" />
+		<classes>
+			<class name="tests.LoginTest">
+				<methods>
+					<include name="loginFallido_02" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="agregarACarrito_03">
+		<parameter name="username" value="standard_user" />
+		<parameter name="password" value="secret_sauce" />
+		<parameter name="cantidadProductosAAgregar" value="3" />
+		<parameter name="cantidadEsperada" value="3" />
+		<classes>
+			<class name="tests.CompraTest">
+				<methods>
+					<include name="agregarACarrito_03" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="sumarTotalDeCompra_04">
+		<parameter name="username" value="standard_user" />
+		<parameter name="password" value="secret_sauce" />
+		<parameter name="cantidadProductos" value="3" />
+		<classes>
+			<class name="tests.CompraTest">
+				<methods>
+					<include name="sumarTotalDeCompra_04" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="verificarDepartamentosMercadoLibre_05">
+		<classes>
+			<class name="tests.ServiceWebTest">
+				<methods>
+					<include name="verificarDepartamentosMercadoLibre_05"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
