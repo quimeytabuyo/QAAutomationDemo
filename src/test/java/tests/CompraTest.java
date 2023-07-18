@@ -1,7 +1,9 @@
 package tests;
 
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -11,7 +13,10 @@ import utils.BaseTest;
 
 
 public class CompraTest extends BaseTest{
-
+	@BeforeMethod
+	public void beforeMethod(ITestResult result){	
+		this.auditBegin(result);
+	}
 	@Test
 	@Parameters({"username" , "password" , "cantidadProductosAAgregar", "cantidadEsperada"})
 	public void agregarACarrito_03(String username, String password, int cantidadProductosAAgregar, int cantidadEsperada) {
@@ -52,11 +57,12 @@ public class CompraTest extends BaseTest{
 		this.audit("Comparando valor inicial con el valor final");
 
 		Assert.assertTrue(precioInicial < precioTotal, "No se sumo el resto de productos");
-		}
+	}
 	
 	
-	@AfterClass
-	public void tearDown () {
+	@AfterMethod
+	public void tearDown (ITestResult result) {
+    	this.auditClose(result, this.driver);
 		this.driver.quit();
 	}
 }
