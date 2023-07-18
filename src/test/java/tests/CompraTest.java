@@ -22,10 +22,10 @@ public class CompraTest extends BaseTest{
 	public void agregarACarrito_03(String username, String password, int cantidadProductosAAgregar, int cantidadEsperada) {
 		LoginPage loginPage = new LoginPage(this.driver);
 		
-    	this.audit("Ingresar usuario: " + username);
+    		this.audit("Ingresar usuario: " + username);
 		loginPage.ingresarUser(username);
 		
-    	this.audit("Ingresar password");
+    		this.audit("Ingresar password");
 		loginPage.ingresarPassword(password);
 		loginPage.clickLoginButton();
 		
@@ -62,7 +62,7 @@ public class CompraTest extends BaseTest{
 	
 	@AfterMethod
 	public void tearDown (ITestResult result) {
-    	this.auditClose(result, this.driver);
+    		this.auditClose(result, this.driver);
 		this.driver.quit();
 	}
 }
